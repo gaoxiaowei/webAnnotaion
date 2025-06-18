@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebAnnotations 测试页面</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .section {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #007AFF;
+            padding-bottom: 10px;
+        }
+        .entity {
+            margin: 15px 0;
+            padding: 10px;
+            background-color: white;
+            border-left: 4px solid #007AFF;
+        }
+        .label {
+            font-weight: bold;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>WebAnnotations 实体检测测试</h1>
+    <p>这个页面包含各种类型的文本实体，用于测试浏览器的自动检测功能。</p>
+
+    <div class="section">
+        <h2>📍 地址 (Addresses)</h2>
+        <div class="entity">
+            <span class="label">Apple Park:</span><br>
+            One Apple Park Way, Cupertino, CA 95014, USA
+        </div>
+        <div class="entity">
+            <span class="label">中文地址:</span><br>
+            北京市朝阳区三里屯路19号三里屯太古里南区
+        </div>
+        <div class="entity">
+            <span class="label">Google总部:</span><br>
+            1600 Amphitheatre Parkway, Mountain View, CA 94043
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>📅 日历/日期 (Calendar)</h2>
+        <div class="entity">
+            <span class="label">会议时间:</span><br>
+            明天下午3点有个重要会议
+        </div>
+        <div class="entity">
+            <span class="label">活动日期:</span><br>
+            2024年12月25日 圣诞节活动
+        </div>
+        <div class="entity">
+            <span class="label">截止日期:</span><br>
+            请在2024年1月15日之前提交报告
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>✉️ 电子邮件 (Email)</h2>
+        <div class="entity">
+            <span class="label">客服邮箱:</span><br>
+            support@example.com
+        </div>
+        <div class="entity">
+            <span class="label">商务合作:</span><br>
+            business@company.com
+        </div>
+        <div class="entity">
+            <span class="label">个人邮箱:</span><br>
+            john.doe@gmail.com
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>📦 包裹追踪号 (Package)</h2>
+        <div class="entity">
+            <span class="label">FedEx:</span><br>
+            123456789012
+        </div>
+        <div class="entity">
+            <span class="label">UPS:</span><br>
+            1Z999AA10123456784
+        </div>
+        <div class="entity">
+            <span class="label">顺丰快递:</span><br>
+            SF1234567890123
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>📞 电话号码 (Phone Numbers)</h2>
+        <div class="entity">
+            <span class="label">美国号码:</span><br>
+            +1 (408) 996-1010
+        </div>
+        <div class="entity">
+            <span class="label">中国号码:</span><br>
+            +86 138-0013-8000
+        </div>
+        <div class="entity">
+            <span class="label">客服热线:</span><br>
+            400-810-2399
+        </div>
+        <div class="entity">
+            <span class="label">紧急电话:</span><br>
+            911 (美国) / 110 (中国)
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>📏 度量单位 (Units)</h2>
+        <div class="entity">
+            <span class="label">温度:</span><br>
+            今天气温是 25°C (77°F)
+        </div>
+        <div class="entity">
+            <span class="label">距离:</span><br>
+            从这里到机场大约 15公里 (9.3英里)
+        </div>
+        <div class="entity">
+            <span class="label">重量:</span><br>
+            这个包裹重 2.5千克 (5.5磅)
+        </div>
+        <div class="entity">
+            <span class="label">面积:</span><br>
+            办公室面积为 150平方米 (1615平方英尺)
+        </div>
+    </div>
+
+    <div class="section" style="background-color: #fff3cd; border-left: 4px solid #ffc107;">
+        <h3>🔍 测试说明</h3>
+        <p><strong>根据 WebAnnotations 策略设置，上述文本可能会：</strong></p>
+        <ul>
+            <li><strong>enabled:</strong> 显示下划线，支持点击和长按</li>
+            <li><strong>disabled:</strong> 不显示任何标记，无法交互</li>
+            <li><strong>longpressonly:</strong> 仅支持长按操作</li>
+            <li><strong>default:</strong> 继承默认设置</li>
+        </ul>
+        <p>在 iOS 设备上测试时，请尝试点击或长按不同类型的文本，观察浏览器的反应。</p>
+    </div>
+</body>
+</html>
